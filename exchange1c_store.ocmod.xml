@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>Склады для модуля Exchange1C v1.6.4.7 и выше</name>
+  <code>exchange1c_store</code>
+  <version>1.0</version>
+  <author>Vitaly E. KirilLove</author>
+  <link>http://exchange1c.tesla-chita.ru/store</link>
+
+  <file path="admin/model/extension/exchange1c.php">
+	<operation>
+      <search><![CDATA[// ADD Modificator]]></search>
+      <add position="after"><![CDATA[	// OK]]></add>
+    </operation>
+	<operation>
+      <search><![CDATA[// Классификатор]]></search>
+      <add position="after"><![CDATA[	private	$WAREHOUSES		= array();]]></add>
+    </operation>
+  </file>
+</modification>
